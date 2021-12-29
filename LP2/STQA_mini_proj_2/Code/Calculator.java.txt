@@ -1,0 +1,37 @@
+package com.junitproject;
+
+public class Calculator {
+ public Calculator() {	 
+ }
+ /**
+   * Sum Method
+   */
+ public int add(int a, int b) {
+	 return a + b;
+ }
+ /**
+  * Subtract Method
+  */
+ public int subtract(int a, int b) {
+	 return a - b;
+ }
+ /**
+  * Multiply Method
+  */
+ public long multiply(int a, int b) {
+	 return a * b;
+ }
+ /**
+  * Divide Method
+  */
+ public double divide(int a, int b) {
+	 double result;
+	 if(b==0) {
+		 throw new IllegalArgumentException("Divison cannot divide by zero ");
+	 }
+	 else {
+		 result=Double.valueOf(a)/Double.valueOf(b);
+	 }
+	 return result;
+ }
+}
